@@ -137,5 +137,6 @@
             <Insets bottom="100.0" left="100.0" right="100.0" top="340.0" />
          </VBox.margin>
       </TableView>
+      <Button mnemonicParsing="false" text="Button" />
    </children>
 </VBox>
