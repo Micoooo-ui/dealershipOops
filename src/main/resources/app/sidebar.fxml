@@ -27,7 +27,7 @@
     <Button fx:id="transactionsBtn" maxWidth="1.7976931348623157E308" onAction="#handleTransactionsClick" style="-fx-background-color: #334155; -fx-text-fill: #FFFFFF; -fx-alignment: CENTER_LEFT; -fx-padding: 10 15; -fx-cursor: hand; -fx-font-size: 14px; -fx-background-radius: 6;" text="Sales &amp; Transactions" />
 
     <Button fx:id="logoutBtn" maxWidth="1.7976931348623157E308" onAction="#handleLogoutClick" style="-fx-background-color: transparent; -fx-text-fill: #94A3B8; -fx-alignment: CENTER_LEFT; -fx-padding: 10 15; -fx-cursor: hand; -fx-font-size: 14px;" text="Log Out" />
-   <ImageView fitHeight="227.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
+   <ImageView fitHeight="212.0" fitWidth="156.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@../../../../../../../../../Downloads/leeeeee.jpg" />
       </image>
