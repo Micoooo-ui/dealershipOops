@@ -1,35 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<VBox prefHeight="700.0" prefWidth="220.0" spacing="10.0" style="-fx-background-color: #1E293B;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.yourcompany.controller.SidebarController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+<AnchorPane prefHeight="700.0" prefWidth="250.0" style="-fx-background-color: #1E293B;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.SidebarController">
+    <children>
 
-    <Label text="Pila ni boss" textFill="WHITE">
-        <font>
-            <Font name="System Bold" size="18.0" />
-        </font>
-        <VBox.margin>
-            <Insets bottom="20.0" top="10.0" />
-        </VBox.margin>
-    </Label>
+        <VBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="41.0" prefHeight="44.0" prefWidth="252.0" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="41.0">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="TheCoffeeToy" wrappingWidth="192.4453125">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Text>
+                <Text fill="#94A3B8" strokeType="OUTSIDE" strokeWidth="0.0" text="Pila ni boss?">
+                    <font>
+                        <Font name="Copperplate Gothic Light" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
 
-    <Button fx:id="inventoryBtn" maxWidth="1.7976931348623157E308" onAction="#handleInventoryClick" style="-fx-background-color: transparent; -fx-text-fill: #94A3B8; -fx-alignment: CENTER_LEFT; -fx-padding: 10 15; -fx-cursor: hand; -fx-font-size: 14px;" text="Inventory Dashboard" />
+        <VBox layoutX="14.0" layoutY="110.0" spacing="8.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="110.0">
+            <children>
+                <Button fx:id="dashboardBtn" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDashboard" style="-fx-background-color: #334155; -fx-text-fill: #E2E8F0; -fx-cursor: hand; -fx-padding: 12 16; -fx-background-radius: 6;" text="Dashboard">
+                    <font>
+                        <Font name="System Medium" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="inventoryBtn" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleInventory" style="-fx-background-color: #334155; -fx-text-fill: #E2E8F0; -fx-cursor: hand; -fx-padding: 12 16; -fx-background-radius: 6;" text="Inventory">
+                    <font>
+                        <Font name="System Medium" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="transactionsBtn" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleTransactions" style="-fx-background-color: #334155; -fx-text-fill: #FFFFFF; -fx-cursor: hand; -fx-padding: 12 16; -fx-background-radius: 6;" text="Transactions">
+                    <font>
+                        <Font name="System Medium" size="14.0" />
+                    </font>
+                </Button>
 
-    <Button fx:id="transactionsBtn" maxWidth="1.7976931348623157E308" onAction="#handleTransactionsClick" style="-fx-background-color: #334155; -fx-text-fill: #FFFFFF; -fx-alignment: CENTER_LEFT; -fx-padding: 10 15; -fx-cursor: hand; -fx-font-size: 14px; -fx-background-radius: 6;" text="Sales &amp; Transactions" />
-
-    <Button fx:id="logoutBtn" maxWidth="1.7976931348623157E308" onAction="#handleLogoutClick" style="-fx-background-color: transparent; -fx-text-fill: #94A3B8; -fx-alignment: CENTER_LEFT; -fx-padding: 10 15; -fx-cursor: hand; -fx-font-size: 14px;" text="Log Out" />
-   <ImageView fitHeight="231.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@../../../../../../../../../Downloads/leeeeee.jpg" />
-      </image>
-   </ImageView>
-</VBox>
+                <Button fx:id="logoutBtn" alignment="BASELINE_LEFT" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleLogout" style="-fx-background-color: transparent; -fx-text-fill: #F87171; -fx-cursor: hand; -fx-padding: 12 16; -fx-background-radius: 6;" text="Logout">
+                    <font>
+                        <Font name="System Medium" size="14.0" />
+                    </font>
+                </Button>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+            <ImageView blendMode="MULTIPLY" fitHeight="233.0" fitWidth="262.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: 5;">
+               <image>
+                  <Image url="@../../../../../../../../../Downloads/PNB.png" />
+               </image>
+            </ImageView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
